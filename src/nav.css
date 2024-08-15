@@ -1,0 +1,72 @@
+
+nav{
+    display: flex;
+    align-items:stretch;
+    justify-content: space-between;
+    padding-top: 70px;
+    width: 100%;
+}
+
+nav .nav-tabs{
+    width: 450px;
+}
+nav .nav-tabs ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-tabs ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-tabs ul li .weather,
+nav .nav-tabs ul li .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+nav .nav-tabs ul li .weather{
+    position: relative;
+    font-size: 18px;
+    height: 39.63px;
+    display: flex;
+    align-items: self-end;
+}
+nav .nav-tabs ul li .weather .weather-logo{
+    width: 51.42px;
+    height: 39.36px;
+}
+nav .nav-tabs ul li .weather .weather-deg{
+    font-size: 18px;
+}
+nav .nav-tabs ul li .weather .deg-mark{
+    position: absolute;
+    left: 90px;
+    top: 9px;
+}
+nav .nav-tabs ul li .weather img,
+nav .nav-tabs ul li .nav-menu span{
+    margin-right: 15px;
+}
+
+nav .nav-tabs ul li .nav-menu img{
+    cursor: pointer;
+}
+
+nav .nav-tabs ul li .contact-logo{
+    width: 50px;
+    height: 50px;
+}
+
+nav .nav-tabs ul li .book-btn{
+    width: 144px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "shanti";
+}

@@ -1,0 +1,52 @@
+.welcome-section{
+    background: url("./assets/Welcome Section.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-section .container{
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.welcome-section .welcome-txt{
+    color: white;
+    margin-left: 50px;
+}
+
+.welcome-section .welcome-txt h1:nth-child(1){
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 87.9px;
+}
+
+.welcome-section .welcome-txt h1:nth-child(2){
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 87.9px;
+}
+.welcome-section .welcome-txt p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight:400;
+    font-family: "SharpSansNo1-Medium" ;
+}
+
+.welcome-section .container .btn-control{
+    width: 100%;
+}
+
+.welcome-section .container .btn-control button{
+    width: 221px;
+    height: 50px;
+    font-family: "shanti";
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 20px;
+}
