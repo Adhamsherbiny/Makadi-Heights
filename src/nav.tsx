@@ -14,7 +14,8 @@ function Nav() {
     return  axios.get(url)
   })
   if(isLoading){
-    return <div className='loading'>
+    return 
+    <div className='loading'>
       <p className='website-name'>MAKADI HEIGHTS</p>
       <p className='slogan'>MADE OF MOMENTS</p>
       <p>Loading ...</p>
