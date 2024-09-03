@@ -1,0 +1,166 @@
+.form-section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px silver;
+  z-index: 1000;
+}
+.msg {
+  position: absolute;
+  top: 50px;
+  left: 60%;
+  transform: translate(-50px, -60%);
+  z-index: 1000;
+  background-color: rgba(255, 0, 0, 0.555);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: 2px solid red;
+  display: none;
+}
+.form-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ededed80;
+}
+
+.form-section .pic {
+  position: relative;
+}
+.form-section .pic img {
+  /* height: 792px; */
+  width: 510px;
+}
+
+.form-section .pic .txt {
+  position: absolute;
+  top: 50%;
+  right: -180px;
+  transform: translateY(-50%) rotate(270deg);
+}
+
+.form-section .pic .txt p {
+  color: #21436e;
+  font-size: 25px;
+  position: absolute;
+  left: 10px;
+  bottom: 120px;
+  font-family: "Sharp Sans Display No1 TRIAL Medium";
+}
+
+.form-section .pic .txt h1 {
+  font-size: 75px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  color: #21436e;
+}
+form {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+form p {
+  width: 376px;
+  font-size: 18px;
+  color: #21436e;
+  font-family: "Sharp Sans Display No1 TRIAL Medium";
+  margin-bottom: 35px;
+}
+
+form .form-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+form .form-div input {
+  border: none;
+  border-bottom: 1px solid #64646436;
+  /* padding: 0 10px; */
+  font-size: 16px;
+  transition: 1s;
+  background-color: transparent;
+}
+
+form .form-div input:focus {
+  outline: none;
+}
+input::placeholder {
+  font-family: "Sharp Sans Display No1 TRIAL Medium";
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 25px;
+  text-align: left;
+  color: #21436e;
+}
+form div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+form div:last-of-type input {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  position: relative;
+}
+
+form div:last-of-type input + label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #646464;
+  left: 0;
+  border-radius: 2px;
+}
+
+form div:last-of-type input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -4px;
+  top: 5px;
+  border-radius: 2px;
+  background-image: url("./assets/checkbox_icon_149960.webp");
+  background-size: cover;
+}
+
+form div:last-of-type label {
+  font-family: "Sharp Sans Display No1 TRIAL Medium";
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 25px;
+  text-align: left;
+  width: 283px;
+  height: 22px;
+  color: #646464;
+  cursor: pointer;
+}
+form .cta {
+  width: 221px;
+  height: 50px;
+  font-family: "Shanti";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: center;
+  background-color: #21436e;
+  color: white;
+  border: 1px solid #21436e;
+  cursor: pointer;
+}
