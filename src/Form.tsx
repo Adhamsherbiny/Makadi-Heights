@@ -16,6 +16,7 @@ function FormSection() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [bugdet, setBugdet] = useState("");
+  const [message, setMessage] = useState("");
 
   const namePattern = /^[a-zA-Z ]{2,40}$/;
   const phoneNumberPattern = /^\d{11}$/;
@@ -57,9 +58,19 @@ function FormSection() {
             msg.current.style.borderColor = "red";
             showMessage("Enter your bugdet", 3000);
           } else {
-            msg.current.style.backgroundColor = "rgba(0, 128, 0, 0.555)";
+            msg.current.style.backgroundColor = "rgba(0, 128, 0, 0.85)";
             msg.current.style.borderColor = "green";
-            showMessage("Sending Data .....", 3000);
+            showMessage(
+              `
+              Sending Data .....
+              Name:${name},
+              Email:${email},
+              Phone:${phoneNumber},
+              Your Bugdet:${bugdet},
+              Message:${message}
+              `,
+              5000
+            );
           }
         }
       }
@@ -133,7 +144,14 @@ function FormSection() {
           </datalist>
         </div>
         <div className="form-div">
-          <input id="message" type="text" placeholder="Enter you message" />
+          <input
+            id="message"
+            type="text"
+            placeholder="Enter you message"
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+          />
         </div>
         <div className="form-div">
           <input id="chk" type="checkbox" />
