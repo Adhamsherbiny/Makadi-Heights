@@ -1,5 +1,5 @@
 import { useState } from "react";
-function Slider({ slides }) {
+function Slider({ slides }: any) {
   //? actv_analog
   const [index, setIndex] = useState(0);
   return (
@@ -13,7 +13,7 @@ function Slider({ slides }) {
       </div>
       <div className="picture-analog">
         <ul>
-          {slides.map((slides, idx) => (
+          {slides.map((_slides: any, idx: any) => (
             <li
               key={idx}
               className={index === idx ? "actv_analog" : ""}
