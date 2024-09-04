@@ -10,6 +10,7 @@ import "./homepage.css";
 import axios from "axios";
 
 function Nav() {
+<<<<<<< HEAD
   const url =
     "https://api.openweathermap.org/data/2.5/weather?lat=26.96546281915211&lon=33.883077697384714&appid=f1130b3524feefd0549671bf69edc578";
   const { isLoading, data } = useQuery("weather", () => {
@@ -23,6 +24,19 @@ function Nav() {
         <p>Loading ...</p>
       </div>
     );
+=======
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=26.96546281915211&lon=33.883077697384714&appid=f1130b3524feefd0549671bf69edc578";
+    const { isLoading , data} =  useQuery("weather" , ()=>{
+    return  axios.get(url)
+  })
+  if(isLoading){
+    return 
+    <div className='loading'>
+      <p className='website-name'>MAKADI HEIGHTS</p>
+      <p className='slogan'>MADE OF MOMENTS</p>
+      <p>Loading ...</p>
+    </div>
+>>>>>>> refs/remotes/origin/master
   }
   return (
     <nav>
@@ -60,4 +74,8 @@ function Nav() {
   );
 }
 
+<<<<<<< HEAD
 export default Nav;
+=======
+export default Nav
+>>>>>>> refs/remotes/origin/master
