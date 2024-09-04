@@ -164,7 +164,7 @@
   font-family: "Sharp Sans Display No1 TRIAL Medium";
 }
 
-@media (min-width: 320px) and (max-width: 468px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .makadi-services {
     height: fit-content;
     margin: 50px 0;
@@ -208,18 +208,89 @@
     text-align: left;
     font-family: "Sharp Sans Display No1 TRIAL Medium";
   }
+
   .describe-services ul {
+    list-style: none;
+    display: flex;
     flex-direction: column;
-    width: 320px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
+  .describe-services ul .first-row,
+  .describe-services ul .second-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .describe-services ul .first-row {
+    border-right: 1px dashed #c4c4c4;
+  }
+
+  .describe-services ul .first-row li,
+  .describe-services ul .second-row li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dashed #c4c4c4;
+    height: 130px;
+    text-align: center;
+    width: 220px;
+    margin: 15px 30px;
+  }
+
+  .describe-services ul .first-row li p:nth-child(2),
+  .describe-services ul .second-row li p:nth-child(2) {
+    color: #268fb4;
+    font-size: 18px;
+    width: 190px;
+    height: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .describe-services ul .first-row {
+    border-right: none;
+  }
   .describe-services ul .first-row li:last-child {
     border-bottom: 1px dashed #c4c4c4;
   }
 
-  .describe-services ul .first-row {
-    margin-top: 30px;
-    border-right: none;
+  .describe-services ul .first-row li:last-child,
+  .describe-services ul .second-row li:last-child {
+    border: none;
+    margin-bottom: 0px;
+  }
+
+  .describe-services ul .second-row li p:nth-child(2).actv-pic {
+    color: #21436e;
+  }
+
+  .describe-services ul .first-row li p:nth-child(3),
+  .describe-services ul .second-row li p:nth-child(3) {
+    color: #757575;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 23px;
+    text-align: center;
+    font-family: "Sharp Sans Display No1 TRIAL Medium";
+  }
+
+  .describe-services ul .first-row li p:nth-child(4),
+  .describe-services ul .second-row li p:nth-child(4) {
+    color: #757575;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Sharp Sans Display No1 TRIAL Medium";
   }
   .makadi-services .container .pictures-section {
     width: 300px;
@@ -227,5 +298,74 @@
   .makadi-services .container .pictures-section .picture div {
     width: 300px;
     height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .makadi-services {
+    height: fit-content;
+    margin: 50px 0;
+  }
+  .makadi-services .container {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+  }
+  .makadi-services .container .pictures-section .picture img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .services .services-text {
+    margin: 0 10px;
+  }
+
+  .services .services-text h3 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    color: #21436e;
+  }
+
+  .services .services-text h2 {
+    font-size: 104.04px;
+    font-weight: 400;
+    line-height: 87.9px;
+    letter-spacing: -5.599999904632568px;
+    text-align: left;
+    color: #21436e;
+  }
+
+  .services .services-text p {
+    font-size: 16px;
+    color: #21436e;
+    font-weight: lighter;
+    line-height: 29px;
+    width: 400px;
+    height: 64px;
+    text-align: left;
+    font-family: "Sharp Sans Display No1 TRIAL Medium";
+  }
+  .describe-services ul {
+    margin-bottom: 30px;
+  }
+
+  .describe-services ul .first-row li:last-child {
+    border-bottom: none;
+  }
+
+  .describe-services ul .first-row {
+    margin-top: 0;
+    border-right: 1px dashed #c4c4c4;
+  }
+
+  .makadi-services .container .pictures-section {
+    width: 600px;
+  }
+  .makadi-services .container .pictures-section .picture div {
+    width: 600px;
+    height: 600px;
   }
 }

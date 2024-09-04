@@ -8,7 +8,7 @@ nav {
 nav .container {
   position: relative;
   width: 85%;
-  height: 100vh;
+  height: 650px;
   margin: auto;
   display: flex;
   justify-content: space-between;
