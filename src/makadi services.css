@@ -138,11 +138,14 @@
   border: none;
   margin-bottom: 0px;
 }
-
-.describe-services ul .second-row li p:nth-child(2).actv-pic {
+.describe-services ul .first-row li p.actv-pic,
+.describe-services ul .second-row li p.actv-pic {
   color: #21436e;
 }
-
+.describe-services ul .first-row li p:nth-child(2),
+.describe-services ul .second-row li p:nth-child(2) {
+  cursor: pointer;
+}
 .describe-services ul .first-row li p:nth-child(3),
 .describe-services ul .second-row li p:nth-child(3) {
   color: #757575;

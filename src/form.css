@@ -25,25 +25,33 @@
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   background-color: #ededed80;
+}
+.form-section .con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .form-section .pic {
   position: relative;
+  max-height: 792px;
 }
 .form-section .pic img {
   height: 792px;
   width: 510px;
 }
 
-.form-section .pic .txt {
+.form-section .con .pic .txt {
   position: absolute;
   top: 50%;
   right: -180px;
   transform: translateY(-50%) rotate(270deg);
 }
 
-.form-section .pic .txt p {
+.form-section .con .pic .txt p {
   color: #21436e;
   font-size: 25px;
   position: absolute;
@@ -52,7 +60,7 @@
   font-family: "Sharp Sans Display No1 TRIAL Medium";
 }
 
-.form-section .pic .txt h1 {
+.form-section .con .pic .txt h1 {
   font-size: 75px;
   font-weight: 400;
   letter-spacing: -2px;
@@ -72,6 +80,7 @@ form p {
   color: #21436e;
   font-family: "Sharp Sans Display No1 TRIAL Medium";
   margin-bottom: 35px;
+  margin-top: 100px;
 }
 
 form .form-div {
@@ -83,11 +92,24 @@ form .form-div {
 }
 
 form .form-div input {
+  position: relative;
   border: none;
   border-bottom: 1px solid #64646436;
   font-size: 16px;
   transition: 1s;
   background-color: transparent;
+}
+
+form .form-div p {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  left: 0;
+  bottom: -15px;
+  color: red;
+  width: 100%;
+  letter-spacing: 0.5px;
 }
 
 form .form-div input:focus {
@@ -108,6 +130,9 @@ form div:last-of-type {
   position: relative;
 }
 
+form div:nth-child(6)::after {
+  content: "";
+}
 form div:last-of-type input {
   margin-right: 15px;
   width: 18px;
@@ -163,27 +188,35 @@ form .cta {
   border: 1px solid #21436e;
   cursor: pointer;
 }
+.thnakSec {
+  display: none;
+  width: 100%;
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .form-section {
+  form .form-div p {
+    font-size: 11px;
+    bottom: -20px;
+    letter-spacing: 1px;
+  }
+  .form-section .con {
     flex-wrap: wrap;
-    /* max-width: 767px; */
-    /* min-width: 320px; */
+
     width: 100%;
   }
-  .form-section .pic img {
+  .form-section .con .pic img {
     width: 320px;
     height: 320px;
   }
 
-  .form-section .pic .txt {
+  .form-section .con .pic .txt {
     position: absolute;
     top: 50%;
     right: -26px;
     transform: translateY(-50%) rotate(270deg);
   }
 
-  .form-section .pic .txt p {
+  .form-section .con .pic .txt p {
     color: #21436e;
     font-size: 15px;
     position: absolute;
@@ -192,14 +225,14 @@ form .cta {
     font-family: "Sharp Sans Display No1 TRIAL Medium";
   }
 
-  .form-section .pic .txt h1 {
+  .form-section .con .pic .txt h1 {
     font-size: 40px;
     font-weight: lighter;
     letter-spacing: -2px;
     color: #21436e;
     bottom: 0;
   }
-  .form-section .pic {
+  .form-section .con .pic {
     position: relative;
     display: flex;
     justify-content: center;
@@ -228,46 +261,50 @@ form .cta {
   }
 }
 @media (min-width: 320px) and (max-width: 360px) {
-  .form-section .pic .txt {
+  .form-section .con .pic .txt {
     top: 50%;
     right: -80px;
   }
 }
 
 @media (min-width: 361px) and (max-width: 400px) {
-  .form-section .pic .txt {
+  .form-section .con .pic .txt {
     top: 50%;
     right: -61px;
   }
 }
 
 @media (min-width: 464px) and (max-width: 387px) {
-  .form-section .pic .txt {
+  .form-section .con .pic .txt {
     top: 50%;
     right: -61px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  form .form-div p {
+    font-size: 11px;
+    bottom: -20px;
+    letter-spacing: 1px;
+  }
   .form-section {
     flex-wrap: wrap;
-    /* max-width: 767px; */
-    /* min-width: 320px; */
     width: 100%;
   }
-  .form-section .pic img {
-    width: 320px;
-    height: 320px;
+
+  .form-section .con .pic img {
+    width: 100%;
+    height: 700px;
   }
 
-  .form-section .pic .txt {
+  .form-section .con .pic .txt {
     position: absolute;
     top: 50%;
     right: -26px;
     transform: translateY(-50%) rotate(270deg);
   }
 
-  .form-section .pic .txt p {
+  .form-section .con .pic .txt p {
     color: #21436e;
     font-size: 15px;
     position: absolute;
@@ -276,14 +313,14 @@ form .cta {
     font-family: "Sharp Sans Display No1 TRIAL Medium";
   }
 
-  .form-section .pic .txt h1 {
+  .form-section .con .pic .txt h1 {
     font-size: 40px;
     font-weight: lighter;
     letter-spacing: -2px;
     color: #21436e;
     bottom: 0;
   }
-  .form-section .pic {
+  .form-section .con .pic {
     position: relative;
     display: flex;
     justify-content: center;
