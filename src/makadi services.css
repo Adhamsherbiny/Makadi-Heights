@@ -258,6 +258,10 @@
     text-align: center;
     margin-top: 10px;
   }
+  .describe-services ul .first-row li p.actv-pic,
+  .describe-services ul .second-row li p.actv-pic {
+    color: #21436e;
+  }
   .describe-services ul .first-row {
     border-right: none;
   }
@@ -269,10 +273,6 @@
   .describe-services ul .second-row li:last-child {
     border: none;
     margin-bottom: 0px;
-  }
-
-  .describe-services ul .second-row li p:nth-child(2).actv-pic {
-    color: #21436e;
   }
 
   .describe-services ul .first-row li p:nth-child(3),
