@@ -106,7 +106,7 @@ form .form-div p {
   margin: 0;
   font-size: 12px;
   left: 0;
-  bottom: -15px;
+  bottom: -10px;
   color: red;
   width: 100%;
   letter-spacing: 0.5px;
@@ -196,7 +196,7 @@ form .cta {
 @media (min-width: 320px) and (max-width: 767px) {
   form .form-div p {
     font-size: 11px;
-    bottom: -20px;
+    bottom: -13px;
     letter-spacing: 1px;
   }
   .form-section .con {
@@ -284,7 +284,7 @@ form .cta {
 @media (min-width: 768px) and (max-width: 1024px) {
   form .form-div p {
     font-size: 11px;
-    bottom: -20px;
+    bottom: -15px;
     letter-spacing: 1px;
   }
   .form-section {
