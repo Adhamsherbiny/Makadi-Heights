@@ -75,7 +75,7 @@ function FormSection() {
                     alertName.current.style.display = "block";
                     alertName.current.style.color = "red";
                     alertName.current.innerText =
-                      "type name without number and any special Character";
+                      "without number and any special Character";
                   } else {
                     alertName.current.style.display = "none";
                     alertName.current.innerText = "";
@@ -154,8 +154,7 @@ function FormSection() {
                 if (bugdet == "") {
                   alerBugdet.current.style.display = "block";
                   alerBugdet.current.style.color = "red";
-                  alerBugdet.current.innerText =
-                    "Bugdet field is required enter your bugdet";
+                  alerBugdet.current.innerText = "required enter your bugdet";
                 } else {
                   alerBugdet.current.style.color = "green";
                   alerBugdet.current.innerText = "";
