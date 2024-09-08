@@ -75,7 +75,7 @@ function FormSection() {
                     alertName.current.style.display = "block";
                     alertName.current.style.color = "red";
                     alertName.current.innerText =
-                      "without number and any special Character";
+                      "without number and special Character";
                   } else {
                     alertName.current.style.display = "none";
                     alertName.current.innerText = "";
